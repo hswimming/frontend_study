@@ -21,7 +21,7 @@ div[name~=name1] {
 
 /* div 중에 class 속성에서 class로 시작되는 태그 선택 (단, -로 구분) */
 div[class|=class] {
-    background-color: aqua;
+    background-color: gray;
 }
 
 /* div 중에 name 속성이 name으로 시작되는 태그 선택 */
