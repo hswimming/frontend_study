@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+/* 항상 맨 위에 있어야 한다. */
+
+/* font-family */
+
+/* 스타일 상속 */
+/* 무조건 되는게 아니라 스타일마다 상속이 되는 게 있고 되지 않는 게 있다. */
+/* body {
+    font-family: '돋움', 'hack';
+} */
+
+#ff1 {
+    font-family: "궁서체";
+}
+
+#ff2 {
+    font-family: "굴림체";
+}
+
+#ff3 {
+    font-family: "없는글꼴", "hack1", "굴림";
+}
+
+#wf {
+    font-family: 'Dokdo', cursive;
+    font-size: 3em;
+}
+
+/* font-size 속성 */
+#size1 {
+    font-size: 20px;
+}
+
+#size2 {
+    font-size: 2em;
+}
+
+/* em : 부모 폰트 사이즈의 상대적 크기 계산,
+        부모를 기준으로 하기 때문에 같은 1em이여도 크기가 커질 수 있다. */
+/* rem : 최상위에서 지정된 크기를 기준으로 한다. */
+#size2 span {
+    /* font-size: 2em; */
+    font-size: 2rem;
+}
+
+/* 같은 크기를 가진다. */
+#size3 {
+    /* font-size: 150%; */
+    font-size: 1.5em;
+}
+
+/* 같은 굵기를 가진다. */
+/* font-weight */
+#fw1 {
+    /* font-weight: 700; */
+    font-weight: bold;
+}
+
+#fw2 {
+    font-weight: lighter;
+}
+
+/* 같은 굵기를 가진다. */
+#fw3 {
+    /* font-weight: 900; */
+    font-weight: bolder;
+}

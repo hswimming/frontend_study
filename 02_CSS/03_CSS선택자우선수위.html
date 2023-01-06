@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 우선순위</title>
+    <style>
+        h1 {
+            color: yellowgreen;
+        }
+
+        h1 {
+            background-color: goldenrod;
+            color: green;
+        }
+
+        #test1 {
+            background-color: pink;
+            /* color: red; */
+        }
+
+        /* 우선순위가 id선택자보다 낮아서 적용안됨 */
+        .test1 {
+            background-color: yellowgreen;
+            color: white;
+        }
+
+        /* 적용안됨 */
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+            color: aquamarine;
+        }
+
+        #test2 {
+            width: 300px;
+            height: 300px;
+            background-color: antiquewhite;
+            color: black;
+        }
+        
+        /* id스타일보다 !important가 우선순위가 더 높아서 적용 가능하다. */
+        p {
+            background-color: khaki !important;
+            color: navy; !important
+            font-size: 2em;
+        }
+
+        /* 적용안됨 */
+        .test2 {
+            background-color: black;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>선택자 우선순위</h1>
+    <p>
+        기본적으로 CSS 속성은 위에서부터 아래로 적용이 되지만<br>
+        같은 태그에 다양한 선택자로 CSS 속성이 설정된 경우에는 우선순위에 따라서 스타일이 적용된다.
+
+        <br><br>
+
+        !important &gt; 인라인 스타일 &gt; id 스타일 &gt; 클래스 스타일 &gt; 태그 스타일
+    </p>
+
+    <div id="test1" class="test1" style="background-color: powderblue;">우선수위 테스트1</div>
+    <p id="test2" class="test2" style="background-color: yellowgreen;">우선수위 테스트2</p>
+</body>
+</html>
