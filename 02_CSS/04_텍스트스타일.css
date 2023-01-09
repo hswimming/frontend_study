@@ -65,3 +65,163 @@
     /* font-weight: 900; */
     font-weight: bolder;
 }
+
+/* font-style */
+#fs1 {
+    font-style: italic;
+}
+
+#fs2 {
+    font-style: oblique;
+}
+
+/* font-variant */
+#fv {
+    font-size: 2em;
+    font-variant: small-caps;
+}
+
+/* color */
+#c-name {
+    color: cornflowerblue;
+}
+
+#c-16 {
+    /* color: #00f 2자리씩 값이 같으면 줄여서 쓰는것도 가능하다 */
+    /* color: #44ffff; */
+    color: #4ff;
+}
+
+#c-rgb {
+    /* color : rgb(255, 255, 255); */
+    /* color : rgb(0, 0, 0); */
+    /* color : rgb(255, 0, 255); */
+    color : rgba(255, 0, 255, .2);
+    /* 1 : 완전 불투명 / 0 : 완전 투명 */
+}
+
+#c-hsl {
+    /* color: rgb(155, 198, 255); */
+    /* 색상, 채도, 밝기 수정 / 100% 완전 밝음 */
+    color: rgba(155, 198, 255, .5);
+}
+
+/* text-decoration */
+#td1 {
+    text-decoration: underline;
+}
+
+#td2 {
+    text-decoration: line-through;
+}
+
+#td3 {
+    text-decoration: overline;
+}
+
+#td4 {
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+/* 눌렀던 링크 색깔 바꾸는 방법 */
+#td4:visited {
+    color: darkgreen;
+}
+
+/* text-transform */
+#tt1 {
+    text-transform: none;
+}
+
+#tt2 {
+    text-transform: capitalize;
+}
+
+#tt3 {
+    text-transform: uppercase;
+}
+
+#tt4 {
+    text-transform: lowercase;
+}
+
+/* text-shadow */
+#bg {
+    background-color: black;
+    width: 530px;
+    padding: 80px;
+    /* 콘텐츠와 테두리 사이의 여백 */
+}
+
+#ts {
+    color: white;
+    font-size: 10em;
+    /* text-shadow: 10px 10px 60px #a0f3a0; */
+    /* 가로, 세로, 번짐효과 */
+    text-shadow: 0px 0px 4px #ccc,
+                    0px -5px 4px #ff3,
+                    2px -10px 6px #fd3,
+                    -2px -15px 11px #f80,
+                    2px -19px 18px #f20;
+}
+
+/* white-space */
+#whs {
+    border: 1px solid;
+    width: 200px;
+    /* white-space: normal; 기본 */
+    /* white-space: nowrap; */
+    /* white-space: pre; */
+    /* white-space: pre-line; */
+    white-space: pre-wrap;
+}
+
+/* letter-spacint */
+#ls {
+    letter-spacing: 10px;
+    /* letter-spacing: 1em; */
+}
+
+#ws {
+    /* word-spacing: 20px; */
+    word-spacing: 2em;
+}
+
+/* text-align */
+#ta1 {
+    text-align: left;
+}
+
+#ta2 {
+    text-align: right;
+}
+
+#ta3 {
+    text-align: center;
+}
+
+#ta4 {
+    text-align: justify;
+}
+
+/* text-indent */
+#ti {
+    text-indent: 20px;
+}
+
+/* line-height */
+#lh {
+    line-height: 0.5;
+}
+
+/* text-overflow */
+#to {
+    background-color: beige;
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    /* text-overflow: clip; */
+    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; 말 줄임표로 표현 */
+}
