@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색상 스타일</title>
+    <style>
+        /* 문서 전체의 배경색, 배경 이미지를 지정할 수 있다. */
+        /* body {
+            background-color: skyblue;
+        } */
+        .bg-clip {
+            width: 30%;
+            height: 300px;
+            margin: 30px;
+            padding: 30px;
+            border: 15px dashed rgba(0, 0, 0, 0.3);
+            /* background-color: indianred; */
+            /* background-color: #5544aa; */
+            /* background-color: #54a; */
+            /* background-color: rgb(0, 255, 0); */
+            /* border: 15px dashed rgba(0, 0, 0, 0.3); */
+            /* background-color: hsl(300, 100%, 50%); */
+            background-color: hsla(300, 100%, 50%, 0.3);
+        }
+
+        #bg-clip {
+            /* background-clip: border-box; 기본값, border 영역까지 backround 범위 지정 */
+        }
+
+        #bg-clip2 {
+            background-clip: padding-box;
+        }
+
+        #bg-clip3 {
+            background-clip: content-box;
+        }
+
+        #bg-img {
+            width: 80%;
+            height: 800px;
+            padding: 20px;
+            border: 15px solid rgba(0, 0, 0, .3);
+            /* background-image: url('../resources/image/bgsample.PNG'); */
+            /* background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20221217_193%2F1671243717975kroMN_JPEG%2F32204664181788175_1481373024.jpg&type=sc960_832'); */
+            background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA2MDFfOTAg%2FMDAxNjU0MDU0OTA4MDUz.bBgWa9j0VzotNhjx0D4fJYeuC9rmUkhXu4HYrhUq7Nog.nZVuWYppIcZHYicj8SmcMO8hI-8Tmj17eY6yLb8seqQg.PNG.nhjhg17%2FKakaoTalk_20220601_123620213_05.png&type=sc960_832');
+
+            /* 이미지 반복 설정 */
+            /* background-repeat: repeat; 기본값 */
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            background-repeat: no-repeat;
+
+            /* 이미지 크기 설정 */
+            /* background-size: auto; */
+            /* background-size: contain; */
+            /* background-size: cover; */
+            /* background-size: 500px 300px; */
+            /* background-size: 100% 100%; 부모에 대한 크기로 비율 지정 */
+
+            /* 이미지 위치 설정 */
+            /* background-position: left top; 기본값 */
+            /* background-position: right top; */
+            /* background-position: center top; */
+            /* background-position: center center; */
+            /* background-position: center; -> center 한개만 써도 동일하게 적용된다. */
+            /* background-position: left center; */
+            /* background-position: right center; */
+            /* background-position: left bottom; */
+            /* background-position: center bottom; */
+            /* background-position: right bottom; */
+
+            /* 이미지 배치 기준 설정 */
+            /* background-origin: padding-box; 기본값 */
+            /* background-origin: border-box; 테두리 부터 이미지를 넣는다. */
+            /* background-origin: content-box; */
+
+            /* 이미지는 고정하도록 설정 */
+            /* background-attachment: scroll; */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>색상 스타일</h1>
+    <h2>background-color, backgrond-clip</h2>
+    <!-- div.bg-clip#bg-clip$*3 -->
+    <div class="bg-clip" id="bg-clip1"></div>
+    <div class="bg-clip" id="bg-clip2"></div>
+    <div class="bg-clip" id="bg-clip3"></div>
+
+    <h2>배경 이미지</h2>
+    <div id="bg-img"></div>
+</body>
+</html>

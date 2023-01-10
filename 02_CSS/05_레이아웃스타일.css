@@ -239,3 +239,113 @@
     height: 100px;
     background-color: skyblue;
 }
+
+/* visibility */
+.visibility {
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+#visibility1 {
+    background-color: pink;
+}
+
+#visibility2 {
+    /* visibility: hidden; 보이지는 않지만 공간은 그대로 차지한다. */
+    /* display: none; 보이지도 않고 공간을 차지하지도 않는다. */
+    background-color: beige;
+}
+
+#visibility3 {
+    background-color: skyblue;
+}
+
+/* z-index */
+#z-outer {
+    position: relative;
+    height: 250px;
+}
+
+.z-index {
+    width: 150px;
+    height: 100px;
+    border: 1px solid;
+    position: absolute; /* 부모 요소가 static이 아닌 요소의 모서리를 기준으로 배치 */
+}
+
+#z-index1 {
+    top: 100px;
+    left: 100px;
+    background-color: darkorange;
+    z-index: 5;
+}
+
+#z-index2 {
+    top: 50px;
+    left: 50px;
+    background-color: khaki;
+    z-index: 6; /* 위의 z-index 값 보다 크기 때문에 맨 위에 온다. */
+}
+
+#z-index3 {
+    background-color: darkolivegreen;
+    z-index: 9999; /* 어떠한 경우에도 맨 위에 오게 하고 싶은 경우 */
+}
+
+/* 다단 스타일 */
+.column-wrap {
+    border: 1px solid;
+    height: 200px;
+    overflow: scroll;
+}
+
+#column1 {
+    border: 1px solid;
+    height: 200px;
+    overflow: scroll; /* div 높이에서 넘어가는 부분은 scroll로 볼 수 있다. */
+    column-width: 300px;
+    /* 단의 너비가 고정이 되기 때문에 브라우저의 크기가 변하면 늘어나거나 줄어든다. */
+    column-gap: 50px;
+    /* column-rule-color: black; */
+    /* column-rule-style: dashed; */
+    /* column-rule-width: 1.5px; */
+    column-rule: 1.5px dashed cornflowerblue; /* 한번에 조건을 주는 방법 */
+}
+
+#column2 {
+    column-count: 6;
+}
+
+#column2>h4 {
+    /* column-span: 1; 기본(단을 합치지 않는다.) */
+    column-span: all;
+}
+
+/* 표 스타일 */
+table {
+    width: 300px;
+    height: 400px;
+    border: 1px solid;
+    caption-side: bottom; /* 어디에 위치하든 무조건 아래로 이동 */
+    /* border-collapse: separate; 기본 */
+    /* border-collapse: collapse; 합치기 */
+    /* border-spacing: 20px; */
+    border-spacing: 20px 50px; /* collapse 상태에서는 적용되지 않는다. */
+    /* empty-cells: swow; 기본 */
+    empty-cells: hide; /* collapse 상태에서는 적용되지 않는다. */
+    table-layout: fixed;
+    /* word-break: break-all; */
+    /* 셀 하나가 커지면 다른 셀도 커지기 때문에 테이블에 style을 줘야 한다. */
+}
+
+td {
+    width: 80px;
+    height: 100px;
+    border: 1px solid;
+    text-align: center; /* 수평정렬 */
+    vertical-align: bottom; /* 수직정렬 */
+    overflow: hidden;
+    text-overflow: ellipsis; /* 한글 적용 안됨 */
+}

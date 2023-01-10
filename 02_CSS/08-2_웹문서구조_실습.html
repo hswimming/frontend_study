@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 문서 구조 실습</title>
+    <style>
+        div {
+            border: 2px solid tomato;
+            box-sizing: border-box;
+        }
+
+        /* 전체를 감싸는 div */
+        .wrap {
+            width:  1000px;
+            height: 800px;
+            margin: auto;
+        }
+        
+        #header {
+            height: 20%;
+        }
+
+        #content {
+            height: 60%;
+        }
+
+        #footer {
+            height: 20%;
+        }
+
+        #content>div {
+            height: 100%;
+            float: left;
+            /* display: inline-block; 요소 사이에 공백이 생겨서 딱 맞지 않는다. */
+            /* margin-left: -3px; 공백 제거 방법 */
+        }
+
+        #content1 {
+            width: 15%;
+        }
+
+        #content2 {
+            width: 85%;
+            /* width: 84%; */
+            /* display: inline-block; 하면 공백 때문에 줄바꿈이 일어나서 84%로 줄임 */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div id="header"></div>
+        <div id="content">
+            <div id="content1"></div>
+            <div id="content2"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+</body>
+</html>
