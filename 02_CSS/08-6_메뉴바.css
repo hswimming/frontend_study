@@ -1,0 +1,56 @@
+nav {
+    border: 1px solid cornflowerblue;
+    box-sizing: border-box;
+    width: 1000px;
+    height: 40px;
+}
+
+#navi {
+    border: 1px solid skyblue;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    /* 부모 태그인 nav의 높이가 40px 이기 때문에 navi 태그의 높이도 따라간다. */
+}
+
+#navi>li {
+    float: left;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+
+/* 자손 선택자 */
+#navi a {
+    text-decoration: none;
+    color: orange;
+    font-size: 1.5em;
+    font-weight: 900;
+    height: 100%;
+    /* 높이 주는 이유? a의 범위가 li의 범위보다 더 작기 때문에 높이를 줘서 맞춰준다. */
+    display: block;
+    line-height: 35px; /* 줄간격 */
+}
+
+#navi a:hover {
+    color: cornflowerblue;
+}
+
+#navi>li>ul {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+#navi>li>a:hover+ul {
+    display: block;
+}
+
+#navi>li>ul:hover {
+    display: block;
+}
+
+#navi>li>ul a {
+    font-size: 1.2em;
+}
