@@ -14,6 +14,7 @@ btn2.onclick = function () {
 // consoleTest(); -> 함수 호출
 btn2.onclick = consoleTest;
 
+// 함수 선언
 function consoleTest() {
     console.log('console 출력 버튼 클릭~~!!');
 }
