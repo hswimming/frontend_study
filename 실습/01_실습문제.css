@@ -6,7 +6,16 @@ nav {
     height: 50px;
 }
 
-#logo {
+#logo1 {
+    float: left;
+    text-align: center;
+}
+
+#logo1>img {
+    height: 75px;
+}
+
+#logo2 {
     text-align: center;
 }
 
