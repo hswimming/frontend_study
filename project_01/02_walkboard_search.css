@@ -11,9 +11,7 @@
 .s_wrapper {
     text-align: center;
     border: 1px solid white;
-    width: 50%;
-    height: 20%;
-    margin: auto;
+    margin-left: 20%;
 }
 
 #walk {
@@ -24,7 +22,8 @@
 }
 
 .search {
-    margin-top: 8%;
+    margin-right: 25%;
+    margin-top: 7%;
 }
 
 #search-box {
